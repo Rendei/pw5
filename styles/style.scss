@@ -1,0 +1,167 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.button-div{
+    padding: 5px;
+}
+
+
+.slider-img{
+    max-height: 500px;
+    height: 100%;
+  }
+
+.slider-slides{
+    margin: auto;
+    width: 40%;
+    height: auto;
+  }
+
+  .boot-jq-wrapper{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+
+
+  .modal1 {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal1-content {
+    position: relative;
+    z-index: 1;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.7s
+  }
+  
+  .modal1-header {
+    padding: 2px 16px;
+    background-color: #dd6041;
+    color: white;
+  }
+  
+  .modal1-body {
+    padding: 2px 16px;
+  }
+  
+  .modal1-footer {
+    padding: 2px 16px;
+    background-color: #dd6041;
+    color: white;
+  }
+  
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+
+.slider-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.slider{
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 10px;
+  background-color: white;
+  overflow: hidden;
+  height: 500px;
+}
+
+
+
+.slider-slide {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  opacity: 0;
+}
+
+.slider-slide.active {
+  opacity: 1;
+}
+
+
+.slider-button {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background-color: #333;
+  opacity: .7;
+  border-radius: 50px;
+}
+
+.slider-button.active {
+  display: none;
+}
+
+#slider-button-prev {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#slider-button-next {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.arrow{
+  max-width: 50px;
+  max-height: 50px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+
+.arrow{
+    max-width: 50px;
+    max-height: 50px;
+    margin: 8px;
+    cursor: pointer;
+  }

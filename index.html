@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 4</title>
+</head>
+<body>
+    
+  
+
+    <div class="boot-jq-wrapper">
+        <h1> Сделано с использованием bootstrap</h1>
+        <div class="button-div">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Включить модальное окно
+            </button>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Всем привет</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                нажми на кнопку закрыть или мимо данного окна
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide slider-slides" data-bs-ride="true">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/1.jpg" class="d-block w-100 slider-img" alt="Всем">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/2.jpg" class="d-block w-100 slider-img" alt="Привет">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/unknown.png" class="d-block w-100 slider-img" alt="Я в офигевшем">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <h1> Сделано с использованием jquery</h1>
+
+        <div class="button-div">
+            <button id="modal-btn" type="button" class="btn btn-primary">
+            Включить модальное окно
+            </button>
+        </div>
+
+        <div class="modal1"> 
+            <div class="modal1-content">
+                <div class="modal1-header">
+                <span class="close">&times;</span>
+                <h2>Диалоговое окно</h2>
+                </div>
+                <div class="modal1-body">
+                <p>Всем привет</p>
+                <p>классом всем Диалоговое самый фигуры</p>
+                </div>
+                <div class="modal1-footer">
+                <h3>выглядит круто</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <flexbox class="slider-container">
+        <div class="slider">
+            <div class="slider-slides">
+                <div class="slider-slide active"> <img class="slider-img" src="images/1.jpg" alt="как"></div>
+                <div class="slider-slide"> <img  class="slider-img" src="images/2.jpg" alt="прогрузи"></div>
+                <div class="slider-slide"> <img class="slider-img" src="images/unknown.png" alt="wtf"></div>
+            </div>
+            <div id="slider-button-prev" class="slider-button active"> <img class="arrow" src="images/arrow-left.svg"></div>
+            <div id="slider-button-next" class="slider-button"> <img class="arrow" src="images/arrow-right.svg"></div>
+        </div>
+    </flexbox>
+    <script type="module" src="./index.js"></script> 
+</body>
+</html>
